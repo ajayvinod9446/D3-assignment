@@ -1,0 +1,60 @@
+    .towns,.towns svg{
+        position: absolute;
+    }
+    .towns svg{
+        width: 70px;
+        height: 30px;
+        padding-right: 125px;
+        font: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .towns circle{
+        fill: red;
+        stroke: blue;
+        stroke-width: 2px;
+    }
+    h1{
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 300px;
+        color: brown;
+        margin-top: 50px;
+    }
+    p{
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 550px;
+        color: brown;
+    }
+    input{
+        margin-bottom: -20px;
+        margin-left: 518px;
+        background-color: 008CBA;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 25px;
+        border: none;
+        text-decoration: white;
+        padding: 9px 15px;
+        border-radius: 20px;
+        border: 2px solid 008CBA;
+        
+    }
+    input:hover{
+        background-color: #008CBA;
+        color: white;
+    }
+    
+    .slider{
+        margin-top: -20px;
+        margin-left: 800px;
+        position: absolute;
+        background-color: red;
+    }
+    #rangeValueDisplay{
+        margin-top: -45px;
+        margin-bottom: 45px;
+        margin-left: 425px;
+        font-size: 25px;
+    }
+
+    

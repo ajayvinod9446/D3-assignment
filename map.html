@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script type="text/javascript" src="script/map.js"></script>
+        <link rel="stylesheet" href="css/map.css">
+    </head>
+    <body>
+        <!-- start body part -->
+        <div>
+            <div><h1>Programming languages for Data Engineering</h1></div>
+            <p>D3 Assignment</p>
+        </div>
+        <input type="button"  value="New Ploting" onclick="plotingOnClick()">
+        <div>
+            <input class="slider" onclick="sliderValue(this.value)" type="range" min="0" max="500" value="20" oninput="rangeValue.innerText = this.value">
+        </div>
+        <div id="rangeValueDisplay">
+            <p  id="rangeValue">20</p>
+        </div>
+        <!-- <div class="slider">
+           
+        </div> -->
+        <div id="map_canvas" style="display: block; height: 100%;"></div>
+        <!-- End body part -->
+        <!-- start map script  -->
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script>
+            var mapOptions = {
+                zoom: 5.5,
+                mapTypeControl: true,
+                center: new google.maps.LatLng(53.736129,-7.988229),
+                scrollwheel: false,
+                zoomControl: false,
+                fullscreenControl: false,
+                gestureHandling:"none",
+                position: google.maps.ControlPosition.center,
+            };
+            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+        </script>
+        <!-- end map script  -->
+    </body>
+</html>
